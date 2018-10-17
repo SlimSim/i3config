@@ -492,7 +492,7 @@ exec_always feh --randomize --bg-scale /usr/share/backgrounds/*.jpg
 ##### DIFFERENT ON EVERY COMPUTER! ##### 
 #exec_always xrandr --output eDP1 --mode 1920x1080 --pos 0x1080 --output DP1 --auto --pos 1920x0 --output HDMI2 --auto --pos 1920x0	# DP1(BIG) to right of laptop monitor
 #exec_always xrandr --output eDP1 --mode 1920x1080 --pos 3840x1080 --output DP1 --auto --pos 0x0 --output HDMI2 --auto --pos 0x0		# DP1(BIG) to left of laptop monitor
-exec_always xrandr --output DisplayPort-0 --primary --mode 1920x1200 --pos 1280x0 --rotate normal --output DVI-1 --mode 1280x1024 --pos 0x168 --rotate normal --output DVI-0 --off --output HDMI-0 --off
+#exec_always xrandr --output DisplayPort-0 --primary --mode 1920x1200 --pos 1280x0 --rotate normal --output DVI-1 --mode 1280x1024 --pos 0x168 --rotate normal --output DVI-0 --off --output HDMI-0 --off
 
 
 
