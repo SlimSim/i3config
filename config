@@ -156,7 +156,11 @@ set $ws8 8
 set $ws9 9
 set $ws10 10
 
+
 # switch to workspace
+bindsym $modb+f workspace next
+bindsym $modb+d workspace prev
+
 bindsym $modb+1 workspace $ws1
 bindsym $modb+2 workspace $ws2
 bindsym $modb+3 workspace $ws3
@@ -169,6 +173,9 @@ bindsym $modb+9 workspace $ws9
 bindsym $modb+0 workspace $ws10
 
 # Move focused container to workspace
+bindsym $modb+Ctrl+f move container to workspace next
+bindsym $modb+Ctrl+d move container to workspace prev
+
 bindsym $modb+Ctrl+1 move container to workspace $ws1
 bindsym $modb+Ctrl+2 move container to workspace $ws2
 bindsym $modb+Ctrl+3 move container to workspace $ws3
@@ -181,6 +188,9 @@ bindsym $modb+Ctrl+9 move container to workspace $ws9
 bindsym $modb+Ctrl+0 move container to workspace $ws10
 
 # Move to workspace with focused container
+bindsym $modb+Shift+f move container to workspace next; workspace next
+bindsym $modb+Shift+d move container to workspace prev; workspace prev
+
 bindsym $modb+Shift+1 move container to workspace $ws1; workspace $ws1
 bindsym $modb+Shift+2 move container to workspace $ws2; workspace $ws2
 bindsym $modb+Shift+3 move container to workspace $ws3; workspace $ws3
@@ -384,7 +394,7 @@ bar {
 	position bottom
 
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
-	tray_output primary
+#	tray_output primary
 #	tray_output eDP1
 
 	bindsym button4 nop
